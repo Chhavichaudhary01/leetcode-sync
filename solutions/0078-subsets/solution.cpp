@@ -5,7 +5,7 @@ public:
             
 
             //store
-            allsubsets.push_back({ans});
+            allsubsets.push_back(ans);
             return;
         }
         ans.push_back(nums[i]);
