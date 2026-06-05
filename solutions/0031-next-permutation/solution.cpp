@@ -1,6 +1,6 @@
 class Solution {
 public:
-    void nextPermutation(vector<int>& nums) {
+    void nextPermutation(vector<int>& nums) { //TC -O(N),SC- O(1)
         // find pivot
         int piv =-1,n = nums.size();
         for(int i=n-2;i>=0;i--){
