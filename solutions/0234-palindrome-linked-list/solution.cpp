@@ -19,7 +19,7 @@ public:
         if(head == NULL || head->next == NULL)
             return true;
         
-        // 1️⃣ Find middle
+        
         ListNode* slow = head;
         ListNode* fast = head;
         
@@ -28,11 +28,11 @@ public:
             fast = fast->next->next;
         }
         
-        // 2️⃣ Reverse second half
+        
         slow->next = reverse(slow->next);
         slow = slow->next;
         
-        // 3️⃣ Compare both halves
+        
         ListNode* temp = head;
         while(slow != NULL){
             if(temp->val != slow->val)
