@@ -21,7 +21,7 @@ public:
         }
 
         k = k% length;
-        temp->next = head;
+        temp->next = head;  // make it  circular list
         int stepsToNewTail = length - k;
         ListNode* newTail = head;
         
