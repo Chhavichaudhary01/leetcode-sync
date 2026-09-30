@@ -1,5 +1,7 @@
 class Solution {
-public:
+public: 
+    // logic : for 90 degree rotatio => transpose + reverse each row
+
     void rotate(vector<vector<int>>& matrix) {
 
         int n = matrix.size();
